@@ -9,6 +9,6 @@ export const csr = dev;
 export const load = (async () => {
   return {
     showBreadcrumb: true,
-    label: 'Styleguide'
+    label: 'Debug'
   };
 });

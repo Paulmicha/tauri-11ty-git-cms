@@ -13,7 +13,10 @@
 		crumbs = tokens.map((t) => {
 			tokenPath += '/' + t;
 			t = t.charAt(0).toUpperCase() + t.slice(1);
-			return { label: t, href: tokenPath };
+			return {
+				label: $page.data.label || t,
+				href: tokenPath
+			};
 		});
 
 		// Add a way to get home too.
