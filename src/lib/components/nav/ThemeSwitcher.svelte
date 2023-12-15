@@ -11,3 +11,17 @@
 		<li><button data-theme-switcher="dark">Dark</button></li>
 	</ul>
 </details>
+
+<style>
+	details[role="list"] {
+		margin: 0;
+	}
+	button[data-theme-switcher] {
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 0;
+		cursor: pointer;
+		text-align: left;
+	}
+</style>

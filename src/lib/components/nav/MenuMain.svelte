@@ -37,18 +37,19 @@
 	});
 </script>
 
-<div>
-	<ul>
-		{#each menu as item}
-			<li>
-				<a href={item.link} class:active={$page.url.pathname === item.link}
-					>{item.title}</a
-				>
-			</li>
-		{/each}
-	</ul>
-</div>
+<ul class="main-menu grid">
+	{#each menu as item}
+		<li>
+			<a href={item.link} class:active={$page.url.pathname === item.link}>
+				{item.title}
+			</a>
+		</li>
+	{/each}
+</ul>
 
 <style>
-	/* todo */
+	.main-menu > li {
+		margin: 0;
+		list-style: none;
+	}
 </style>

@@ -36,15 +36,14 @@
 	{/each}
 </div>
 
-<style lang="scss">
-	.breadcrumb {
-		margin: 0 1.5rem;
-		padding: 1rem 2rem;
-	}
+<style>
 	a {
 		display: inline-block;
 		color: red;
 		padding: 0 0.5rem;
+	}
+	a:first-child {
+		padding-left: 0;
 	}
 	.label {
 		padding-left: 0.5rem;

@@ -12,8 +12,22 @@
 	const modules = import.meta.glob('./**/+page.svelte');
 </script>
 
-<ThemeSwitcher />
-<MenuMain {modules} />
-<Breadcrumb />
+<header>
+	<MenuMain {modules} />
+	<div class="container grid">
+		<div class="grid-item-expand">
+			<Breadcrumb />
+		</div>
+		<ThemeSwitcher />
+	</div>
+</header>
 
-<slot />
+<main class="container">
+	<slot />
+</main>
+
+<style>
+	.grid-item-expand {
+		flex-grow: 1;
+	}
+</style>
